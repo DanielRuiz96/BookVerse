@@ -1,0 +1,194 @@
+:root {
+    --fontTexto: 'Raleway', sans-serif;
+    --fontHeading: 'Staatliches', cursive;
+
+    /** Colores **/
+    --azul: #00487C;
+    --rojo: #A01C48;
+    --naranja: #F58549;
+    --amarillo: #ECA400;
+    --verde: rgb(20, 131, 20);
+    --gris: #969696;
+    --grisOscuro: #707070;
+    --grisClaro: rgb(243, 243, 243);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    height: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--grisClaro);
+    font-size: 1.6rem;
+    font-family: var(--fontTexto);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenedor principal de la app */
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 100vh;
+}
+
+/* Contenido principal */
+.main-content {
+    flex-grow: 1;
+    padding: 2rem;
+}
+
+/* GLOBALES */
+a {
+    font-family: var(--fontTexto);
+    color: black;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: var(--fontHeading);
+}
+
+/* HEADER */
+.barra {
+    background-color: var(--azul);
+    padding: 1rem 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contenido-barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contenido-barra h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-barra img {
+    width: 70px;
+    height: 70px;
+    margin-right: 1rem;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navegacion a {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.6rem;
+    margin-left: 2rem;
+    padding: 0.5rem;
+}
+
+.navegacion a:hover {
+    color: var(--amarillo);
+}
+
+.navegacion a::before {
+    font-size: 2rem;
+    margin-right: 0.8rem;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.navegacion a.inicio::before {
+    content: "\f015";
+}
+
+.navegacion a.productos::before {
+    content: "\f468";
+}
+
+.navegacion a.pedidos::before {
+    content: "\f02d";
+}
+
+.navegacion a.carrito::before {
+    content: "\f07a";
+}
+
+/* Estilo para el botón de cerrar sesión */
+.btn-logout {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    text-decoration: underline;
+  }
+  
+  .btn-logout:hover {
+    color: #ff6666;
+    text-decoration: none;
+  }
+  
+  /* Estilo para los enlaces del Navbar */
+  .navegacion a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navegacion a:hover {
+    color: #ff6666;
+  }
+  
+
+/* FOOTER */
+footer {
+    background-color: var(--azul);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+/* RESPONSIVE para móviles */
+@media (max-width: 768px) {
+    .contenido-barra {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navegacion {
+        margin-top: 1rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .navegacion a {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+}

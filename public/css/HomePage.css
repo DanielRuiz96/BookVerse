@@ -1,0 +1,119 @@
+.home-page {
+    text-align: center;
+    padding: 20px;
+}
+
+.home-page h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.productos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.producto {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(20% - 20px);
+    /* Para mostrar 5 productos por fila */
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.producto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 8px;
+}
+
+.producto h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.producto p {
+    color: #555;
+    margin: 5px 0;
+}
+
+.producto .btn-azul {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.producto .btn-azul:hover {
+    background-color: #0056b3;
+}
+
+.producto .btn-azul:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Botón "Agregar al carrito" */
+.producto .btn-agregar {
+    display: inline-block;
+    background-color: #28a745;
+    /* Verde */
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.producto .btn-agregar:hover {
+    background-color: #218838;
+}
+
+.producto .btn-agregar:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.barra-busqueda {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.barra-busqueda input {
+    width: 80%;
+    max-width: 600px; 
+    padding: 15px; 
+    font-size: 1.5rem; 
+    border-radius: 5px;
+    border: 2px solid #007bff; 
+    outline: none;
+}
+
+.barra-busqueda input:focus {
+    border-color: #0056b3; 
+}

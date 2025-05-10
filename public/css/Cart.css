@@ -1,0 +1,103 @@
+/* Estilos generales para el carrito */
+.carrito {
+    font-family: 'Raleway', sans-serif;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+    /* background-color: white; */ /* Eliminado */
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */ /* Eliminado */
+  }
+  
+  /* Título */
+  .carrito h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--azul);
+    margin-bottom: 20px;
+  }
+  
+  /* Contenedor de cada producto */
+  .carrito .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Nombre del producto */
+  .carrito .item h4 {
+    font-size: 1.6rem;
+    color: var(--grisOscuro);
+    margin: 0;
+  }
+  
+  /* Precio */
+  .carrito .item p {
+    font-size: 1.4rem;
+    color: var(--gris);
+    margin: 5px 0;
+  }
+  
+  /* Estilo para la cantidad */
+  .carrito .item input {
+    width: 60px;
+    padding: 5px;
+    font-size: 1.4rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-left: 10px;
+  }
+  
+  /* Botón de eliminar */
+  .carrito .item button {
+    background-color: var(--rojo);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+  
+  .carrito .item button:hover {
+    background-color: #cc1549;
+  }
+  
+  /* Mensaje cuando el carrito está vacío */
+  .carrito p {
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--grisOscuro);
+    margin-top: 20px;
+  }
+  
+  /* Botón de finalizar compra */
+  .carrito .finalizar-compra {
+    background-color: var(--verde);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.8rem;
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  
+  .carrito .finalizar-compra:hover {
+    background-color: rgb(16, 120, 16);
+  }
+  
+  /* Estilos del total de la compra */
+  .total-compra {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: var(--azul);
+    text-align: right;
+  }
+  
